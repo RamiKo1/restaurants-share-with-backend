@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head -->
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%- include('includes/header') %>
+    <!-- aside -->
+    <%- include('includes/aside') %>
+    <main>
+      <h1><%= restaurantItem.name %></h1>
+      <p><%= restaurantItem.cuisine %> | <%= restaurantItem.address %></p>
+      <p><%= restaurantItem.description %></p>
+      <p>
+        <a href="<%= restaurantItem.website %> " target="_blank"
+          >View Website</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
